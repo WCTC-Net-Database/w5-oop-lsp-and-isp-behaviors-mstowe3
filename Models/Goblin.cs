@@ -8,10 +8,15 @@ namespace W5_assignment_template.Models
 
         public void Attack(IEntity target)
         {
-            Console.WriteLine($"{Name} attacks {target.Name} with a terrifying shout.");
+            Console.WriteLine($"{Name} attacks {target.Name} with a screech.");
         }
 
         public void Fly()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BurnEnemy(IEntity target)
         {
             throw new NotImplementedException();
         }
@@ -20,6 +25,10 @@ namespace W5_assignment_template.Models
         {
             Console.WriteLine($"{Name} moves aggressively.");
         }
+        public void ExecuteCastSpell(IEntity target)
+        {
+           throw new NotImplementedException(); 
+        }        
     }
 
 }

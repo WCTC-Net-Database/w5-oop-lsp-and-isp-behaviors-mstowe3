@@ -5,6 +5,9 @@
         void Attack(IEntity target);
         void Move();
         void Fly();
+        void ExecuteCastSpell(IEntity target);
+        void BurnEnemy(IEntity target);
+        
         string Name { get; set; }
     }
 

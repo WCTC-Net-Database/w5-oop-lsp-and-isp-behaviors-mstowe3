@@ -15,9 +15,18 @@ public class Character : IEntity
     {
         throw new NotImplementedException();
     }
+    
+    public void BurnEnemy(IEntity target)
+    {
+        throw new NotImplementedException();
+    }
 
     public void Move()
     {
         Console.WriteLine($"{Name} moves forward.");
+    }
+    public void ExecuteCastSpell(IEntity target)
+    {
+        Console.WriteLine($"{Name} casts a repelling spell.");
     }
 }

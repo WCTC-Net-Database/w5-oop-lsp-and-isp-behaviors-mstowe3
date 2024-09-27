@@ -13,12 +13,22 @@ namespace W5_assignment_template.Models
 
         public void Move()
         {
-            Console.WriteLine($"{Name} floats silently.");
+            Console.WriteLine($"{Name} floats eerily.");
         }
 
         public void Fly()
         {
-            Console.WriteLine($"{Name} flies rapidly through the air.");
+            Console.WriteLine($"{Name} flies races through the air.");
+        }
+
+        public void BurnEnemy(IEntity target)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ExecuteCastSpell(IEntity target)
+        {
+            Console.WriteLine($"{Name} casts an ice spell on {target.Name}.");
         }
     }
 }
